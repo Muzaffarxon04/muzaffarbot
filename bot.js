@@ -3,7 +3,7 @@ const config = require("./config/config")
 const chat_id = 1061783391
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 
 const orders = []
 let likescaunt = 0
