@@ -201,6 +201,7 @@ else if (msg.text === "Portfolio kanalim") {
                 one_time_keyboard: true
             }
         })
+        
     }
 
 
@@ -237,6 +238,7 @@ bot.sendChatAction(chat_id, "typing")
 
 
 bot.on('callback_query', (c) => {
+    
 
     if (c.data === "1ike") {
         bot.answerCallbackQuery(c.id, {
@@ -248,6 +250,7 @@ bot.on('callback_query', (c) => {
     else {
         bot.answerCallbackQuery(c.id, {
             text: "Xafa qildingiz☹️",
+            show_alert:true
         })
         ++dislikescaunt
     }
