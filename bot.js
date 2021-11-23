@@ -259,20 +259,13 @@ bot.on('callback_query', (c) => {
 
 
 
-app.get('/botlists', (req, res) => {
+app.get('/', (req, res) => {
     res.json(orders, likescaunt, dislikescaunt)
 })
 
 app.listen(PORT, () => console.log(PORT))
 
 
-bot.getMe().then((d) => {
-    if (d) {
-        console.log(d);
-    }
-}).catch((e) => {
-    console.log(e.message);
-})
 
 
 
