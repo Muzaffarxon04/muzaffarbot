@@ -243,6 +243,8 @@ bot.on('callback_query', (c) => {
     if (c.data === "1ike") {
         bot.answerCallbackQuery(c.id, {
             text: "Like uchun raxmat🙂",
+            show_alert:true
+
         })
         ++likescaunt
     }
