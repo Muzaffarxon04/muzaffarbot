@@ -242,8 +242,8 @@ bot.on('callback_query', (c) => {
 
     if (c.data === "1ike") {
         bot.answerCallbackQuery(c.id, {
+            show_alert:true,
             text: "Like uchun raxmat🙂",
-            show_alert:true
 
         })
         ++likescaunt
@@ -251,8 +251,8 @@ bot.on('callback_query', (c) => {
     
     else {
         bot.answerCallbackQuery(c.id, {
+            show_alert:true,
             text: "Xafa qildingiz☹️",
-            show_alert:true
         })
         ++dislikescaunt
     }
