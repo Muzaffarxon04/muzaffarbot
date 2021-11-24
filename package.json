@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pm2 start": "npm run start",
     "start": "node bot.js",
     "dev": "nodemon bot.js"
   },

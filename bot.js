@@ -3,7 +3,7 @@ const config = require("./config/config")
 const chat_id = 1061783391
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 6000
 
 const orders = []
 let likescaunt = 0
@@ -20,8 +20,6 @@ let chat = [
         text: `https://t.me/portfolio55`
     }
 ]
-
-
 
 
 
