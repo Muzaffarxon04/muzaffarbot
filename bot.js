@@ -260,7 +260,7 @@ bot.on('callback_query', (c) => {
 
 
 app.get('/', (req, res) => {
-    res.json(orders, likescaunt, dislikescaunt)
+    res.json([`Orders: ${orders}, Likes: ${likescaunt}, Dislikes: ${dislikescaunt}`])
 })
 
 app.listen(PORT, () => console.log(PORT))
