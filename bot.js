@@ -3,7 +3,7 @@ const config = require("./config/config")
 const chat_id = 1061783391
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 6000
 
 const orders = []
 let likescaunt = 0
@@ -20,8 +20,6 @@ let chat = [
         text: `https://t.me/portfolio55`
     }
 ]
-
-
 
 
 
@@ -201,6 +199,7 @@ else if (msg.text === "Portfolio kanalim") {
                 one_time_keyboard: true
             }
         })
+        
     }
 
 
@@ -237,16 +236,20 @@ bot.sendChatAction(chat_id, "typing")
 
 
 bot.on('callback_query', (c) => {
+    
 
     if (c.data === "1ike") {
         bot.answerCallbackQuery(c.id, {
+            show_alert:true,
             text: "Like uchun raxmat🙂",
+
         })
         ++likescaunt
     }
     
     else {
         bot.answerCallbackQuery(c.id, {
+            show_alert:true,
             text: "Xafa qildingiz☹️",
         })
         ++dislikescaunt
